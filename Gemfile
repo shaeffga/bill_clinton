@@ -4,7 +4,13 @@ gem 'rails', '4.0.3'
 
 gem 'pg'
 gem 'rails_12factor', '0.0.2'
+
+# testing gems
 gem 'rspec-rails', '2.13.1'
+gem 'guard-rspec', '2.5.0'
+gem 'spork-rails', '4.0.0'
+gem 'guard-spork', '1.5.0'
+gem 'childprocess', '0.3.6'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
