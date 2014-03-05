@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
 
+#styling
+gem 'bootstrap-sass', '2.3.2.0'
+
 gem 'pg'
 gem 'rails_12factor', '0.0.2'
 
