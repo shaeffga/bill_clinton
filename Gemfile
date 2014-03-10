@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
 
+#authentication
+gem 'bcrypt-ruby', '3.1.2'
+
 #styling
 gem 'bootstrap-sass', '2.3.2.0'
 
