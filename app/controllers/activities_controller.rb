@@ -1,12 +1,11 @@
 class ActivitiesController < ApplicationController
-
   def index
   end
 
   def create 
     @activity = Activity.new(activity_params)
     if @activity.save
-      flash[:success] = "Kenny is a FGT!"
+      flash[:success] = "Check this out!"
       redirect_to @activity
     else 
       render 'new'
