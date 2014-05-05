@@ -1,16 +1,36 @@
 <div class="center hero-unit">
-  <h1>Bill Clinton</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
-
-<div id='logo'>
-<%= link_to image_tag("mario.jpeg", alt: "ITS A ME!") %>
-</div>
-
+<!--  Carousel - consult the Twitter Bootstrap docs at 
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+      <h2>My Life.</h2>
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <%= image_tag("cincy.jpg", alt: "Cincinnati 513") %>
+      <div class="carousel-caption">
+        <p>Hello World</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("uc.png", alt: "University of Cincinnati") %>
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("uc.png", alt: "University of Cincinnati") %>
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("uc.png", alt: "University of Cincinnati") %>
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->

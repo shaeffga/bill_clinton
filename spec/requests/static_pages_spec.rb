@@ -7,7 +7,7 @@ describe "Static pages" do
   describe "Home page" do
     before {visit root_path}
     
-    it { should have_content('Bill Clinton') }
+    it { should have_content('Gage Shaeffer') }
     it { should have_title(full_title('')) }
     it { should_not have_title('| Home') }
   end
@@ -23,7 +23,7 @@ describe "Static pages" do
     before{visit about_path}
     
     it { should have_title(full_title('About')) }
-    it { should have_content('About Us')}
+    it { should have_content('Juggling')}
   end
 
   describe "Contact page" do

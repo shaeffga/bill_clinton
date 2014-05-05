@@ -1,0 +1,11 @@
+<h2> What I can do just from those 2 inputs! <b>Be amazed</b></h2>
+
+
+
+<ul>
+  <li>Your name is: <b><%=@activity.name.reverse.upcase%></b> spelled backwards.</li>
+  <li>Your name is <b><%=@activity.name.length-1%></b> characters long.</li>
+  <li>Print your name multiple times.... <%=(@activity.name+ " ") * 6%></li>
+  <li>My birthday is in 1994 meaning <%=years_lived%></li>
+  <li>You are roughly <%=Time.now.year - @activity.yob%> years old!</li>
+</ul>

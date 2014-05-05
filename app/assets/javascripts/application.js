@@ -15,3 +15,23 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+function life_time()
+{
+  var date = new Date();
+  var cur_year = date.getFullYear();
+  var yob = document.getElementById("birth_year").value;
+  var years = cur_year - yob;
+
+  document.getElementById("birth_year").innerHTML=(yob);
+
+    // if (yob < cur_year)
+    // {
+    //   document.getElementById("birth_year").innerHTML=("You were born this year!");
+    // }
+    // else
+    // {
+    //   document.getElementById("birth_year").innerHTML=(years);
+    // }
+  }

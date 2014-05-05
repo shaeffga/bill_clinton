@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@activity) do |f| %>
+
+      <%= f.label :yob , 'Year of Birth'%>
+      <%= f.text_field :yob %>
+
+      <%= f.label :name, 'Full Name' %>
+      <%= f.text_field :name %>
+
+      <%= f.submit "See the magic", class: "btn btn-small btn-primary" %>
+    <% end %>
+  </div>
+</div>
